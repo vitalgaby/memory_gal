@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Memory Gallery</h1>
+            <p> 🤎"Memories are timeless treasures of the heart."🤎</p>
+            <p><audio src="images/keny.mp3" controls></audio></p>
+
+        
+        <div class="image-container">
+            <div class="image"><img src="images/image1.jpeg" alt=""></div>
+            <div class="image"><img src="images/image2.jpg" alt=""></div>
+            <div class="image"><img src="images/image3.jpeg" alt=""></div>
+            <div class="image"><img src="images/image4.jpeg" alt=""></div>
+            <div class="image"><img src="images/image5.jpeg" alt=""></div>
+            <div class="image"><img src="images/image6.jpg" alt=""></div>
+            <div class="image"><img src="images/image7.jpg" alt=""></div>
+            <div class="image"><img src="images/image8.jpeg" alt=""></div>
+            <div class="image"><img src="images/image9.jpeg" alt=""></div>
+            <div class="image"><img src="images/image10.jpeg" alt=""></div>
+            <div class="image"><img src="images/image11.jpeg" alt=""></div>
+            <div class="image"><img src="images/image12.jpeg" alt=""></div>
+            <div class="image"><img src="images/image13.jpeg" alt=""></div>
+            <div class="image"><img src="images/image14.jpg" alt=""></div>
+            <div class="image"><img src="images/image15.jpeg" alt=""></div>
+           </div>
+
+            <div class="popup-img">
+                <span>&times;</span>
+                <img src="images/image1.jpeg" alt="">
+                </div>
+
+           <script>
+           document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-img').style.display = 'block';
+                document.querySelector('.popup-img img').src = image.getAttribute('src');
+            }
+           });
+           document.querySelector('.popup-img span').onclick = () =>{
+               document.querySelector('.popup-img').style.display = 'none';
+           }
+
+           </script>
+           </header>
+
+    <main class="end">
+
+        <div class="video-container">
+            <div class="video"><video src="videos/them.mp4" controls autoplay muted></video></div>
+            <div class="video"><video src="videos/dancing.mp4" controls autoplay muted></video></div>
+            <div class="video"><video src="videos/her.mp4" controls autoplay muted></video></div>
+            </div>
+
+            <p>"Siempre estaras en nuestro corazon"</p>
+
+        <div class="image-container1">
+            <div class="image"><img src="images/tia.jpg" alt=""></div>
+            </div>
+           
+            <h2>"Marialuisa Ferrer"</h2>
+            <p>12|16|1959 - 02|21|2024</p>
+            <br>
+            <br>
+            <br>
+
+        </main>
+
+    <footer>
+            COPYRIGHT MAY 2024 @ GABY SANCHEZ ALL RIGHTS RESERVED | INSTAGRAM: 
+            <a href="https://www.instagram.com/magabbz?igsh=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr">MAGABBZ</a>
+            </footer>
+    
+    </body>
+</html>
+
